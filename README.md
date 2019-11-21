@@ -71,40 +71,28 @@ color = str;
 }
 public abstract void show();
 
+public class app11_1{
+       public static void main(String agrs[]){
+              CTriangle t1 = new CTriangle(3,4,5);
+              t1.setcolor("Red");
+              t1.show();
+        }
 }
 
 class CTriangle extends CShape{
     protected double bottom,height,hypotenuse;
     
-    public  CTriangle (a,b,c){
-        if(Math.pow(a,2) = Math.pow(b,2) + Math.pow(c,2)){
-            b = height;
-            c=  bottom;
-            a = hypotenuse;
-        }else if(Math.pow(c,2) = Math.pow(b,2) + Math.pow(a,2)){
-            b = height;
-            a = bottom;
-            c = hypotenuse;
-        }else if(Math.pow(b,2) = Math.pow(a,2) + Math.pow(c,2)){
-            a = height;
-            c = bottom;
-            b = hypotenuse;
-        }else{
-        System.out.println("這不是直角三角形");
-           }
-           
-        public void show(){
+    public  CTriangle (double a,dpuble b,double c){
+        bottom = a;
+        height = b;
+        hypotenuse = c;
+    }
+    
+     @Override
+         public void show(){
             System.out.print("color="+color+", ");
             System.out.print("area = "+ (bottom*height)*0.5);
-        }
-        
-        
-        public class app11_1{
-            public static void main(String agrs[]){
-                CTriangle t1 = new CTriangle(3,4,5);
-                t1.setcolor("Red");
-                t1.show();
-            }
-        }
-    }
+        }       
+    } 
+    
 ```
