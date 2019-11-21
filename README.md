@@ -62,9 +62,9 @@ public class HelloWorld {
 ```java
 //父子類別作業
 
+//CShape父類別
 abstract class CShape 
 {
-//CShape父類別
 protected String color;
 public void setcolor(String str){
 color = str;
