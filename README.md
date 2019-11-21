@@ -79,10 +79,13 @@ public class app11_1{
         }
 }
 
+
+
+//另一類別CTriangle
 class CTriangle extends CShape{
     protected double bottom,height,hypotenuse;
     
-    public  CTriangle (double a,dpuble b,double c){
+    public  CTriangle (double a,double b,double c){
         bottom = a;
         height = b;
         hypotenuse = c;
