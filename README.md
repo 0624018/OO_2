@@ -71,12 +71,11 @@ color = str;
 }
 public abstract void show();
 
-public class app11_1{
-       public static void main(String agrs[]){
-              CTriangle t1 = new CTriangle(3,4,5);
-              t1.setcolor("Red");
-              t1.show();
-        }
+public static void main(String agrs[]){
+       CTriangle t1 = new CTriangle(3,4,5);
+       t1.setcolor("Red");
+       t1.show();
+     }
 }
 
 
